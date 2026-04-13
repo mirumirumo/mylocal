@@ -1,0 +1,40 @@
+theme = ayu
+
+font-family = Hack Nerd Font Regular
+font-size = 14
+
+adjust-cell-width = -1
+adjust-cell-height = 8
+
+# macOS
+# macos-titlebar-style = hidden
+# macos-window-shadow = false
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = tabs
+
+# Window
+window-height = 20
+window-width = 90
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+
+# Shell
+shell-integration-features = no-cursor
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+cursor-invert-fg-bg = true
+cursor-opacity = 0.8
+
+# Icon
+macos-icon = custom-style
+macos-icon-ghost-color = E53888
+macos-icon-screen-color = E53888
+# F564A9
+
+# Other
+mouse-hide-while-typing = true
+resize-overlay = never
+
