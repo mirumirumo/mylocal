@@ -6,6 +6,7 @@ return {
         gopls = {
           settings = {
             gopls = {
+              staticcheck = false,
               hints = {
                 assignVariableTypes = false,
                 compositeLiteralFields = false,
