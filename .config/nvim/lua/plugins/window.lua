@@ -11,8 +11,8 @@ return {
     version = "*",
     event = "VeryLazy",
     opts = {
-      open_mapping = [[<C-.>]],     -- 開閉キー
-      direction = "float",          -- float / horizontal / vertical / tab
+      open_mapping = [[<C-.>]], -- 開閉キー
+      direction = "float", -- float / horizontal / vertical / tab
       size = function(term)
         if term.direction == "horizontal" then
           return 15
@@ -21,11 +21,11 @@ return {
         end
       end,
       float_opts = {
-        border = "curved",          -- single / double / shadow / curved
-        winblend = 0,               -- 透過度（0で不透明）
+        border = "curved", -- single / double / shadow / curved
+        winblend = 0, -- 透過度（0で不透明）
       },
-      shading_factor = 2,           -- 非フロート時、ターミナル背景を少し暗くする
-      start_in_insert = true,       -- 開いたらすぐ入力モード
+      shading_factor = 2, -- 非フロート時、ターミナル背景を少し暗くする
+      start_in_insert = true, -- 開いたらすぐ入力モード
       persist_size = true,
       persist_mode = true,
     },
@@ -44,15 +44,6 @@ return {
       end
 
       vim.cmd("autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()")
-
-      -- ここから追加：番号付きフロートを Normal モードから開く
-      vim.keymap.set("n", "<leader>t1", "<cmd>1ToggleTerm direction=float<cr>", { desc = "Float Term 1" })
-      vim.keymap.set("n", "<leader>t2", "<cmd>2ToggleTerm direction=float<cr>", { desc = "Float Term 2" })
-      vim.keymap.set("n", "<leader>t3", "<cmd>3ToggleTerm direction=float<cr>", { desc = "Float Term 3" })
-      vim.keymap.set("n", "<leader>t4", "<cmd>4ToggleTerm direction=float<cr>", { desc = "Float Term 4" })
-      -- 開いているターミナルから選んで切り替え
-      vim.keymap.set("n", "<leader>ts", "<cmd>TermSelect<cr>", { desc = "Select Terminal" })
     end,
-  }
+  },
 }
-
