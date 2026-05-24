@@ -1,4 +1,5 @@
 return {
+  -- gopls用設定
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -22,4 +23,24 @@ return {
       },
     },
   },
+
+  -- rust-analyzer用設定
+  {
+    "mrcjkb/rustaceanvim",
+    opts = {
+      server = {
+        default_settings = {
+          ["rust-analyzer"] = {
+            inlayHints = {
+              parameterHints = { enable = false },
+              typeHints = { enable = true },
+              chainingHints = { enable = true },
+              closingBraceHints = { enable = true },
+            },
+          },
+        },
+      },
+    },
+  },
+
 }
