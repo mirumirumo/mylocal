@@ -1,0 +1,10 @@
+.credentials.json
+credentials.json
+*credentials*
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+.netrc
+github-copilot/
