@@ -1,7 +1,10 @@
 theme = ayu
 
 font-family = Hack Nerd Font Regular
-font-size = 14
+font-size = 16
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
 
 adjust-cell-width = -1
 adjust-cell-height = 8
@@ -11,6 +14,7 @@ adjust-cell-height = 8
 # macos-window-shadow = false
 macos-titlebar-proxy-icon = hidden
 macos-titlebar-style = tabs
+macos-option-as-alt = left
 
 # Window
 window-height = 20
