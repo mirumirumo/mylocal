@@ -19,11 +19,11 @@ return {
             gopls = {
               staticcheck = false,
               hints = {
-                assignVariableTypes = true,
+                assignVariableTypes = false,
                 compositeLiteralFields = false,
                 compositeLiteralTypes = false,
-                constantValues = true,
-                functionTypeParameters = true,
+                constantValues = false,
+                functionTypeParameters = false,
                 parameterNames = false,
                 rangeVariableTypes = false,
               },
