@@ -1,12 +1,23 @@
 return {
   "stevearc/conform.nvim",
-  optional = true,
   opts = {
+    formatters_by_ft = {
+      go = { "gofmt" },
+      lua = { "stylua" },
+      rust = { "rustfmt" },
+      javascript = { "prettier" },
+      typescript = { "prettier" },
+      typescriptreact = { "prettier" },
+      json = { "prettier" },
+      html = { "prettier" },
+      css = { "prettier" },
+      scss = { "prettier" },
+      markdown = { "prettier" },
+    },
     formatters = {
-      black = { prepend_args = { "--line-length", "120" } },
-      rustfmt = { prepend_args = { "--config", "max_width=120" } },
-      prettier = { prepend_args = { "--print-width", "120", "--prose-wrap", "preserve" } },
+      black = { prepend_args = { "--line-length", "100" } },
+      rustfmt = { prepend_args = { "--config", "max_width=100" } },
+      prettier = { prepend_args = { "--print-width", "100", "--prose-wrap", "preserve" } },
     },
   },
 }
-

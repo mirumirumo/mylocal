@@ -1,4 +1,14 @@
 return {
+  -- InlayHintのグローバル無効化
+  {
+    "neovim/nvim-lspconfig",
+    ops = {
+      inlay_hint = {
+        enable = false,
+      },
+    },
+  },
+
   -- gopls用設定
   {
     "neovim/nvim-lspconfig",
@@ -9,13 +19,20 @@ return {
             gopls = {
               staticcheck = false,
               hints = {
-                assignVariableTypes = false,
+                assignVariableTypes = true,
                 compositeLiteralFields = false,
                 compositeLiteralTypes = false,
-                constantValues = false,
-                functionTypeParameters = false,
+                constantValues = true,
+                functionTypeParameters = true,
                 parameterNames = false,
                 rangeVariableTypes = false,
+              },
+              directoryFilters = {
+                "-.git",
+                "-.vscode",
+                "-.idea",
+                "-node_modules",
+                "-vendor",
               },
             },
           },
@@ -42,5 +59,4 @@ return {
       },
     },
   },
-
 }
