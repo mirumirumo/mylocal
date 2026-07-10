@@ -3,6 +3,7 @@ credentials.json
 *credentials*
 *.pem
 *.key
+.DS_Store
 .env
 .env.*
 !.env.example

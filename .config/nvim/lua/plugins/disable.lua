@@ -1,6 +1,6 @@
 return {
 
-    -- disable trouble
-    { "folke/trouble.nvim", enabled = false },
-
+  -- disable trouble
+  -- { "folke/trouble.nvim", enabled = false },
 }
+
