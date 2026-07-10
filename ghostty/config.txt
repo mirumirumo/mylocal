@@ -25,7 +25,6 @@ window-padding-balance = true
 background-opacity = 0.85
 background-blur-radius = 45
 
-
 # Shell
 shell-integration-features = no-cursor
 
