@@ -1,11 +1,33 @@
 return {
+  -- kanagawa 本体
   {
-    "folke/tokyonight.nvim",
+    "rebelot/kanagawa.nvim",
     opts = {
-      styles = {
-        comments = { italic = false },
-        keywords = { italic = false },
+      compile = false,
+      transparent = false,
+      theme = "wave",
+      commentStyle = { italic = false },
+      keywordStyle = { italic = false },
+      background = {
+        dark = "wave",
+        light = "lotus",
       },
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = "none",
+            },
+          },
+        },
+      },
+    },
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "kanagawa",
     },
   },
 }
