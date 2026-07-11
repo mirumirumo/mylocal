@@ -8,7 +8,7 @@ return {
     keys = {
       { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Explorer NvimTree" },
     },
-    
+
     ---@type nvim_tree.config
     opts = {
       sort = { sorter = "case_sensitive" },
@@ -18,7 +18,6 @@ return {
     },
   },
 
-  --
   -- nvim-tree.lua で git 状態によってファイル名を VSCode 風に色分け
   -- LazyVim を nvim-tree に差し替えて使っている場合用
   {
@@ -29,7 +28,7 @@ return {
         ignore = false,
       },
       renderer = {
-        highlight_git = true,        -- ファイル名にgitハイライトを適用
+        highlight_git = true, -- ファイル名にgitハイライトを適用
         highlight_opened_files = "name",
         icons = {
           show = {
@@ -53,5 +52,5 @@ return {
       },
     },
   },
-  
 }
+
