@@ -4,12 +4,12 @@ return {
     opts = {
       compile = false,
       transparent = false,
-      theme = "wave",
+      theme = "dragon",
       commentStyle = { italic = false },
       keywordStyle = { italic = false },
       background = {
         dark = "wave",
-        light = "wave",
+        light = "lotus",
       },
       colors = {
         theme = {
@@ -38,6 +38,11 @@ return {
         sidebars = "dark",
         floats = "dark",
       },
+      on_highlights = function(hl, c)
+        hl.NvimTreeOpenedFile = { fg = c.orange, bold = true, italic = false }
+        hl.NvimTreeOpenedHL = { fg = c.orange, bold = true, italic = false }
+        hl.NvimTreeModifiedFile = { fg = c.red }
+      end,
     },
   },
 
