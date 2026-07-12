@@ -12,3 +12,5 @@ vim.filetype.add({
 -- ファイル保存時、末尾に改行を入れる
 vim.opt.fixendofline = true
 vim.opt.fixendofline = true
+
+vim.opt.cmdheight = 1
