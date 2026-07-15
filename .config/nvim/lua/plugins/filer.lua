@@ -37,20 +37,8 @@ return {
             folder = true,
             folder_arrow = true,
           },
-          glyphs = {
-            git = {
-              unstaged = "✗",
-              staged = "✓",
-              unmerged = "",
-              renamed = "➜",
-              untracked = "★",
-              deleted = "",
-              ignored = "◌",
-            },
-          },
         },
       },
     },
   },
 }
-
