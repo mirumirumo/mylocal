@@ -16,8 +16,8 @@ return {
           "javascript",
           -- 競技プログラミング / その他
           "cpp",
+          "rust",
           "python",
-          "sql",
           -- インフラ・設定系
           "bash",
           "json",
@@ -25,6 +25,7 @@ return {
           "toml",
           "html",
           "css",
+          "sql",
           "dockerfile",
           "gitcommit",
           "gitignore",
