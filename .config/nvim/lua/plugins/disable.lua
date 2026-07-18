@@ -1,7 +1,4 @@
 return {
-
-  -- disable trouble
-  -- { "folke/trouble.nvim", enabled = false },
   {
     "folke/noice.nvim",
     opts = {
@@ -11,10 +8,10 @@ return {
       messages = { enabled = false },
     },
   },
-  -- {
-  --   { "nvim-treesitter/nvim-treesitter", enabled = false },
-  -- },
-  -- {
-  --   { "nvim-treesitter/nvim-treesitter-textobjects", enabled = false },
-  -- },
+  {
+    { "nvim-treesitter/nvim-treesitter", enabled = false },
+  },
+  {
+    { "nvim-treesitter/nvim-treesitter-textobjects", enabled = false },
+  },
 }
