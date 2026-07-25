@@ -25,8 +25,8 @@ return {
           "toml",
           "html",
           "css",
-          "sql",
           "dockerfile",
+          "sql",
           "gitcommit",
           "gitignore",
           "diff",
@@ -53,7 +53,7 @@ return {
       -- Neovim コアの foldexpr で代替する
       vim.o.foldmethod = "expr"
       vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-      vim.o.foldlevel = 99 -- 開いた状態を既定にする
+      vim.o.foldlevel = 99
     end,
   },
 }
