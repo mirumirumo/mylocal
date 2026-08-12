@@ -40,7 +40,9 @@ macos-icon-ghost-color = E53888
 macos-icon-screen-color = E53888
 # F564A9
 
+# Keybind
+keybind = ¥=text:\\
+
 # Other
 mouse-hide-while-typing = true
 resize-overlay = never
-
